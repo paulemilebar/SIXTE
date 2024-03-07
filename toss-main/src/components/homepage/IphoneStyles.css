@@ -1,0 +1,100 @@
+.section-iphone{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    color: black;
+}
+
+.section-iphone img{
+    height: 700px;
+}
+
+.iphone-text h2{
+    font-size: 5em;
+    text-align: left;
+    background: linear-gradient(to right, #172c4b 0%, #146768 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* .iphone-text label{
+    background: linear-gradient(to right, #1e130c 0%, #9a8478 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+.iphone-text h5{
+    font-size: 1.4em;
+    font-weight: 400;
+    color:#474646 ;
+    text-align: left;
+}
+
+.iphone-text{
+    width: 50%;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.iphone-text p{
+    color:#474646 ;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.iphone-text img{
+    width: 200px;
+    height: auto;
+    border-radius: 40px;
+    margin: auto;
+}
+
+.download-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.download-links img{
+    border-radius: 0px;
+    transition: 0.5s all ease-in-out;
+}
+
+.download-links img:hover{
+    opacity: 0.7;
+    transition: 0.5s all ease-in-out;
+}
+@media screen and (max-width:1240px) {
+    .iphone-text h2{
+        font-size: 4em;
+        text-align: left;
+    }
+    .section-iphone{
+        flex-direction: column;
+    }
+    .section-iphone img{
+       width: 300px;
+       height: auto !important;
+       margin: auto;
+    }
+    .iphone-text{
+        width: 100%;
+        padding: 0 50px;
+    }
+    .iphone-text h2{
+        text-align: center;
+        font-size: 3em;
+    }
+    .iphone-text h5{
+        font-size: 1.1em;
+    }
+    .iphone-text p{
+        font-size: 1em;
+    }
+    .iphone-text img{
+        width: 150px;
+        border-radius: 30px;
+        margin: 1em auto;
+    }
+    
+
+}

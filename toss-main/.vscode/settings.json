@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/e52878e9-3d9c-4d55-9834-82ff25e28a89/AppServices/subscriptions/e52878e9-3d9c-4d55-9834-82ff25e28a89/resourceGroups/cs_sports/providers/Microsoft.Web/sites/test-rin",
+    "appService.deploySubpath": "."
+}

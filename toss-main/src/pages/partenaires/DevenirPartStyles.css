@@ -1,0 +1,122 @@
+.devenir-part{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.devenir-part h1{
+    color: black;
+    
+    font-size: 8em;
+}
+.devenir-part a{
+    position: absolute;
+    bottom: 5%;
+}
+.devenir-part-content{
+    min-height: 100vh;
+   
+
+}
+.devenir-part-content h2{
+    width: 70%;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 400;
+    margin: auto;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.semi-circle-part{
+    width: 60rem;
+    height: 60rem;
+    background: url('../../assets/redbull_tente.jpeg');
+    border-radius:  0 60rem 60rem 0rem;
+    background-position: center;
+    background-size: cover;
+}
+.devenir-part-inner{
+    margin-top: 2em;
+}
+.devenir-part-inner{
+    display: flex;
+}
+.devenir-part-inner-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    width: 45%;
+}
+
+.devenir-part-inner-content p{
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 2em;
+
+}
+.devenir-part-inner-content h4{
+    color: black;
+    font-size: 1.4em;
+    font-weight: 300;
+    padding: 2em;
+    text-align: justify;
+}
+.part-btn-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.part-btn{
+    padding: 12px 32px;
+    border-radius: 5px;
+    color: black;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    color:white;
+    border: 1px solid black;
+    transition: 0.4s all ease-in-out;
+}
+.part-btn:hover{
+    background-color: white;
+    color:black;
+    transition: 0.4s all ease-in-out;
+}
+
+@media screen and (max-width:1240px) {
+    .devenir-part h1{
+        font-size: 4em;
+
+        text-align: center;
+    }
+    .devenir-part-content h2{
+        font-size: 3em;
+    }
+    .devenir-part-inner-content{
+        width: 100%;
+    }
+    .devenir-part-inner{
+        flex-direction: column;
+    }
+    .part-btn-content{
+        flex-direction: column;
+    }
+    .part-btn{
+        margin:  2em auto;
+        width: 200px;
+      
+    }
+    .semi-circle-part{
+    width: 24rem;
+    margin-left: 0;
+    align-items: left !important;
+    border-radius: 0px;
+    
+}
+
+}

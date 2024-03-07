@@ -1,0 +1,284 @@
+:root{
+    --main-color-ambassadeur:#066C38;
+    --main-color-text:#FEFAE0;
+    --second-color-text:#f0ca6a;
+
+}
+
+.ambassadeur{
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 40px;
+
+}
+
+.ambassadeur h1{
+    font-size: 8em;
+    color: var(--main-color-text);
+    text-transform: uppercase;
+    text-align: center;
+}
+.ambassadeur h3{
+    font-weight: 300;
+    color:white;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+.ambassadeur-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    background: var(--main-color-ambassadeur);
+    position: relative;
+}
+.ambassadeur-title a{
+    position: absolute;
+    bottom: 5%;
+}
+.fleche-ambassade{
+
+    font-size: 3em;
+    color:var(--main-color-text);
+    animation: fleche-mazars 4s infinite linear;
+    cursor: pointer;
+}
+
+/* Animation pour la fleche */
+@keyframes fleche-mazars {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+/* Deuxième partie */
+
+.ambassadeur-container{
+    min-height: 100vh;
+}
+.ambassadeur-image{
+    background-color: var(--main-color-ambassadeur)
+}
+.ambassadeur-img{
+    min-height: 80vh;
+    background: url('../../assets/images_sports/foot.jpeg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    border-bottom-left-radius: 200px;
+}
+.ambassadeur-link{
+    min-height: 32vh;
+    background-color: var(--main-color-ambassadeur);
+    border-bottom-left-radius: 200px;
+    display: flex;
+    padding: 0em 2em;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.link-content a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.link-content h3{
+    font-weight: 500;
+    font-size: 1.8em;
+    color:var(--main-color-text);
+    text-align: center;
+
+}
+.fleche-down{
+    font-size: 2.5em;
+    font-weight: 500;
+    color: white;
+    margin: 1em;
+}
+
+/* Card présentation */
+
+.ambassadeur-card{
+    background-color: var(--main-color-ambassadeur);
+    margin-top: 50px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ambassadeur-card h2{
+    font-size: 8em;
+    text-transform: uppercase;
+    width: 70%;
+    color: var(--main-color-text);
+    padding: 1em;
+}
+.ambassadeur-presentation-content{
+    width: 60%;
+    margin: auto;
+}
+.ambassadeur-presentation-content p{
+    font-size: 1.8em;
+    font-weight: 400;
+    padding: 20px;
+    text-align: justify;
+    color: var(--main-color-text);
+
+}
+.ambassadeur-presentation-content ul li{
+    font-size: 1.8em;
+    font-weight: 400;
+    padding: 20px;
+    text-align: justify;
+    color: var(--main-color-text);
+
+    list-style: initial;
+}
+
+.ambassadeur-presentation-content button{
+    padding: 12px 24px;
+    font-size: 2em;
+    background-color: var(--main-color-text);
+    color: var(--main-color-ambassadeur);
+    border: 1px solid var(--main-color-ambassadeur);
+    border-radius: 10px;
+    margin: 4em auto;
+    display: flex;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.ambassadeur-presentation-content button:hover{
+    transition: 0.4s;
+    color:var(--main-color-text);
+    background: var(--main-color-ambassadeur);
+    border: 1px solid var(--main-color-text);
+
+}
+.how{
+    padding-bottom: 30px;
+}
+.ambassadeur-presentation-content span{
+    color: var(--second-color-text);
+}
+
+.circle-1-ambassadeur{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--main-color-text);
+    opacity: 0.7;
+    top:50%;
+    transform: translateX(-150px);
+
+}
+.circle-2-ambassadeur{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--second-color-text);
+    opacity: 0.7;
+    top:60%;
+    transform: translateX(-100px);
+
+}
+.circle-3-ambassadeur{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--second-color-text);
+    opacity: 0.7;
+    right: 0;
+    bottom: 0;
+    transform: translate(100px,100px);
+}
+
+.circle-4-ambassadeur{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--second-color-text);
+    opacity: 0.9;
+    right: 0;
+    top: 30%;
+    transform: translateX(120px);
+
+
+}
+
+/* Responsive */
+
+@media screen and (max-width:1240px) {
+    .ambassadeur h1{
+        font-size: 2.5em;
+    }
+    .fleche-ambassade{
+        font-size: 2em;
+    }
+    .link-content h3{
+        font-size: 1.3em;
+      
+    }
+    .link-content a{
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 0em;
+    }
+    .ambassadeur-link{
+        flex-direction: column;
+        border-bottom-left-radius: 100px
+    }
+    .fleche-down{
+        font-size: 1.8em;
+        margin: 0;
+    }
+    .ambassadeur-link h3{
+        width: 80%;
+        margin-top: 0px;
+    }
+    .link-content{
+        width: 90%;
+    }
+
+    .ambassadeur-card h2{
+        font-size: 4em;
+        padding: 0em 10px;
+        width: 90%;
+    }
+    .ambassadeur-card{
+        border-top-right-radius:100px;
+        border-bottom-left-radius:100px;
+    }
+    .ambassadeur-presentation-content{
+        width: 85%;
+    }
+    .ambassadeur-presentation-content p{
+        text-align: center;
+    }
+    .circle-1-ambassadeur, .circle-2-ambassadeur, .circle-3-ambassadeur, .circle-4-ambassadeur{
+        display: none;
+    }
+    .how h2{
+        font-size: 2.5em;
+        width: 80%;
+        margin: 20px 10px;
+    }
+    .ambassadeur-title{
+        height: 60vh;
+    }
+}

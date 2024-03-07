@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@100;300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-scrollbar:20vw;
+}
+
+h1,h4,p,a {
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:300px;
+  margin: auto !important;
+  transition: 0.5s;
+  background: white;
+    color: #474646;
+
+}
+.btn a{
+  display: flex;
+  align-items: center;
+}
+
+.btn-light {
+  background: rgba(255,255,255, .2);
+}
+
+.btn:hover {
+  background: black;
+border: none;
+  transition: 0.5s;
+  color: white;
+}
+
+
+.btn:hover .fleche-home{
+  transform: translateX(20px);
+  transition: 0.5s all ease-in-out;
+}
+
+.texte h1{
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.loader{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img{
+  width: 300px;
+  animation: loaderAnimation 20s infinite linear;
+}
+
+@keyframes loaderAnimation {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: white;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(0,0,0, .2);
+  height: 10px;
+  border-radius: 100vw;
+  border: 2px solid white;
+  transition: 0.5s all ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient( #FC466B 0%,  #3F5EFB 100%);
+  transition: 0.4s all ease-in-out;
+}

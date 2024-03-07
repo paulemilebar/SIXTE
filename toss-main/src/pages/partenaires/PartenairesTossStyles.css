@@ -1,0 +1,151 @@
+.partenaires-toss-title{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partenaires-toss-title h1{
+    color: black;
+    font-size: 8em;
+}
+.partenaires-toss-title a{
+    position: absolute;
+    bottom: 5%;
+}
+
+.partenaires-toss-officiel{
+    height: 40vh;
+    background: black;
+}
+
+.partenaires-presentation{
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+}
+.partenaires-title-content{
+    width: 50%;
+    
+
+   
+}
+.partenaires-title-content div:first-child{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.partenaires-category li{
+    padding: 1em;
+}
+.partenaires-category li a{
+    color: black;
+}
+.partenaires-category li a h2{
+    font-size: 2em;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
+    
+}
+.partenaires-category li a h2:hover{
+    text-decoration: underline;
+    transition: 0.25 all ease-in-out;
+}
+.partenaires-image-toss img{
+    width: 150px;
+    height: 150px;
+}
+
+.partenaires-content{
+    width: 50%;
+    padding: 0 3em;
+}
+
+
+.partenaires-inner{
+    height: 30vh;
+    color: black;
+    display:  flex;
+    justify-content: space-evenly;
+    border-top:1px solid black;
+    padding: 3em;
+}
+.partenaires-inner-content p{
+    color: black;
+}
+
+.partenaires-inner-image img{
+    width: 200px;
+}
+.partenaires-inner-content{
+    width:60%;
+    padding: 0em 2em ;
+}
+
+.fleche-partenaire{
+    transform: translateX(15px);
+}
+
+.sticky{
+    position: fixed;
+    top:0;
+    left: 0;
+
+}
+
+.sticky-partenaires{
+    justify-content: flex-end;
+}
+.desactive{
+    display: none !important;
+}
+
+.bold h2{
+    font-size: 2.3em !important;
+    font-weight: 600 !important;
+    transition: 0.4 all ease-in-out;
+}
+
+@media screen and (max-width:1240px) {
+    .partenaires-toss-title h1{
+        font-size: 3em;
+    }
+    .partenaires-title-content div:first-child{
+        flex-direction: column;
+    }
+    .partenaires-image-toss img {
+        width: 80px;
+        height: 80px;
+    }
+    .partenaires-category li a h2{
+        font-size: 1.3em;
+    }
+    .bold h2{
+        font-size: 1.5em;
+    }
+    .partenaires-presentation{
+        flex-direction: column;
+        align-items: center;
+    }
+    .partenaires-content{
+        width: 100%;
+        padding: 0 1em;
+    }
+    .partenaires-inner{
+        flex-direction: column;
+        height: auto;
+        padding: 1em;
+    }
+    .partenaires-inner-content{
+        width: 100%;
+    }
+    .partenaires-inner-content p{
+        text-align: justify;
+    }
+    .partenaires-title-content{
+        width: 100%;
+    }
+}

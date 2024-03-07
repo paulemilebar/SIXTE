@@ -1,0 +1,71 @@
+.third-section{
+    margin: 2em 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.third-section-title span{
+    color:#474646;
+    font-size: 4em;
+    justify-content: center;
+    display: flex;
+}
+
+.third-section-title h2{
+    color: #919090;
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+}
+
+.third-section-number{
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 1em auto;
+}
+.third-section-number p{
+    color:#919090;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.third-section-number h3{
+    font-size: 3em;
+    font-weight: 500;
+    color: #474646;
+}
+
+.third-section-number div{
+border:1px solid;
+border-color: #dadada;
+border-radius: 16px;
+padding: 32px 16px ;
+box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+@media screen and (max-width:1000px) {
+    .third-section-number h3{
+        font-size: 2.5em;
+    }
+    .third-section-number p{
+        font-size: 1.2em;
+    }
+    .third-section-title h2{
+        font-size: 2.5em;
+    }
+    .third-section-title span{
+        font-size: 3em;
+    }
+    .third-section-number{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .third-section-number div{
+        width: 300px;
+    }
+}

@@ -1,0 +1,286 @@
+.footer {
+    width: 100%;
+z-index: 1000000;
+position: relative;
+overflow: hidden;
+padding-top: 150px;
+}
+
+.footer-container{
+    background: rgba(0,0,0);
+}
+
+.footer-round{
+    height: 100px;
+    width: 100%;
+    background: rgba(0,0,0);
+    border-top-left-radius: 200px 40px;
+    border-top-right-radius: 200px 40px;
+    position: absolute;
+
+    z-index: 20000;
+
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+}
+
+.second-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.footer .left, .footer .right{
+    width: 400px;
+}
+
+.footer .right{
+    text-align: center;
+}
+.footer-navbar{
+    color:white;
+    text-align: center;
+    width: 300px;
+
+}
+
+.footer-mazars{
+    width: 300px;
+    color: rgba(200,200,200);
+}
+
+.footer-mazars p{
+    color: rgba(200,200,200);
+    font-size: 1rem;
+}
+
+.footer-container {
+    margin: auto;
+    padding: 0rem 4rem;
+}
+
+.footer .right img:hover{
+    transform: rotate(180deg);
+    transition: 1s all ease-in-out;
+}
+.footer h4 {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+
+.footer p {
+
+    padding: 1rem 0;
+}
+
+
+.footer li{
+    color: rgba(200,200,200);
+}
+.footer .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .location p {
+    padding-bottom: .5rem;
+}
+
+.footer .location h4 {
+    padding-top: 0;
+}
+
+.footer-image{
+    padding:2rem;
+    margin: auto;
+}
+.footer .social{
+    padding: 2rem;
+}
+.row-image{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright{
+    text-align: center;
+    color:grey;
+    background: rgba(20,20,20);
+}
+
+.copyright p{
+    color:rgba(200,200,200);
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width:640px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .right .social {
+        margin: auto;
+    }
+    .first-row{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .second-row{
+        flex-wrap: wrap;
+    }
+}
+
+.footer .right img{
+    animation: rotation 10s infinite linear;
+}
+
+.footer img:hover{
+    opacity: 0.5;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation */
+
+.footer-animation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   z-index: 1;
+   transform: translateY(-83px);
+}
+.footer-animation-2 img{
+    width: 150px;
+    height: autos;
+    margin:  0 4em;
+    transition: 0.4s;
+    
+}
+.footer-animation-2 a{
+    cursor: pointer;
+}
+.footer-animation-2 img:hover{
+    animation: rotateTouch 1s ease-in-out infinite;
+    transition: 0.4s;
+}
+
+.footer-animation-2{
+    display: flex;
+    animation: slide 30s linear infinite;
+}
+.logo1{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 0;
+}
+.logo2{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 0.5s;
+}
+.logo3{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 1s;
+}
+.logo4{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 1.5s;
+}
+.logo5{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 2s;
+}
+.logo6{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 2.5s;
+}
+.logo7{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 3s;
+}
+.logo8{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 3.5s;
+}
+.logo9{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 4s;
+}
+.logo10{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 4.5s;
+}
+.logo11{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 5s;
+}
+.logo12{
+    animation: wave 5s ease-in-out infinite;
+ animation-delay: 5.5s;
+}
+
+@keyframes slide {
+    0%{
+        transform: translate(40%,0);
+    }
+    100%{
+        transform: translate(-10%,0);
+    }
+}
+
+@keyframes wave {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(80px);
+    }
+
+    100%{transform: translateY(0px);}
+}
+
+@keyframes rotateTouch {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(10deg);
+    }
+    40%{
+        transform: rotate(-10deg);
+    }
+    60%{
+        transform: rotate(10deg);
+    }
+    80%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+.blank{
+    height: 30vh;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    transform: translateY(220px);
+    z-index: 100;
+}

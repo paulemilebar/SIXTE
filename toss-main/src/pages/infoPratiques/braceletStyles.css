@@ -1,0 +1,201 @@
+.bracelet{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --main-color:#f8485e;
+    --second-color:#56555a;
+}
+
+.bracelet-title{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bracelet-title h1{
+    font-size: 6em;
+    text-align: center;
+    color: var(--second-color);
+
+}
+.bracelet-title a{
+    position: absolute;
+    bottom: 5%;
+}
+
+.bracelet-presentation{
+    min-height: 40vh;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.bracelet-presentation h4{
+    width: 80%;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+}
+.bracelet-content{
+    padding-bottom: 50px;
+}
+.bracelet-content h3{
+    width: 80%;
+    color:var(--second-color);
+    margin: auto;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 1.5em;
+
+}
+.bracelet-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--second-color);
+
+}
+.bracelet-images img{
+    width: 500px;
+}
+
+.bracelet-numbers{
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 4em auto;
+}
+.bracelet-numbers p{
+    color:#919090;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.bracelet-numbers h4{
+    font-size: 2em;
+    font-weight: 500;
+    color: #474646;
+}
+.bracelet-numbers h6{
+    color:#919090;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.bracelet-numbers div{
+border:1px solid;
+border-color: #dadada;
+border-radius: 16px;
+padding: 32px 16px ;
+box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+.icon{
+    font-size: 3em;
+    color: var(--main-color);
+    margin-top: 20px;
+}
+.bracelet h2{
+    font-size: 5em;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.bracelet-img{
+    width: 1000px;
+    height: 900px;
+    border-radius: 50%;
+    background: url('../../assets/bracelet.jpeg');
+    background-size: cover;
+    background-position: center;
+    transform: translateX(-150px);
+
+}
+
+.bracelet-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.bracelet-recup-content{
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-100px);
+}
+.bracelet-recup-content p{
+    padding: 1em;
+    color:var(--second-color);
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.bracelet-perte{
+    margin-top: 50px;
+}
+.bracelet-perte p{
+    border:1px solid;
+    border-color: #dadada;
+    border-radius: 16px;
+    padding: 32px 16px ;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    width: 700px;
+    color: var(--second-color);
+    margin: 1em auto;
+    font-size: 1.5em;
+}
+.bracelet span{
+    color: black;
+    font-weight: 600;
+}
+/* Responsive */
+
+@media screen and (max-width:1240px) {
+    .bracelet-title h1{
+        font-size: 4em;
+    }
+    .bracelet-presentation h4{
+        width: 90%;
+        padding: 20px;
+    }
+    .bracelet-images img{
+        width: 300px;
+    }
+    .bracelet-images{
+        flex-direction: column;
+    }
+    .bracelet-numbers{
+        flex-direction: column;
+        display: flex;
+    }
+    .bracelet-numbers div{
+        width: 300px;
+    }
+    .bracelet h2{
+
+        font-size: 3em;
+        padding: 20px;
+    }
+    .bracelet-container{
+        flex-direction: column;
+    }
+    .bracelet-img{
+        width: 400px;
+        height: 400px;
+        transform: translateX(-50px);
+    }
+    .bracelet-recup-content{
+        width: 90%;
+        margin: auto;
+        transform: translate(0px);
+    }
+    .bracelet-perte p{
+        width: 300px;
+    }
+}

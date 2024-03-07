@@ -1,0 +1,131 @@
+.first-section{
+    background: white;
+    color:black;
+    display: flex;
+    justify-content: space-around;
+    padding: 3em;
+}
+
+.first-section-image img{ 
+    width: 600px;
+    height: 500px;
+    border-radius: 45px;
+}
+
+.first-section-texte{
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.first-section-texte h5{
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+}
+
+.first-section h2{
+    font-size: 80px;
+    letter-spacing: -2px;
+    background: linear-gradient(to right, #3091d0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.first-section-texte p{
+    color: #474646;
+    text-align: justify;
+    font-size: 20px;
+    padding: 20px 0;
+
+}
+
+.btn-first-section{
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+cursor: pointer;
+    background: linear-gradient(to right, #3091d0 0%, #330867 100%);
+    color: white;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.btn-first-section:hover{
+    color:rgb(238, 238, 238);
+}
+
+.btn-first-section:hover .fleche{
+    animation: fleche 1s linear infinite;
+}
+
+@keyframes fleche {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
+
+
+@media screen and (max-width:1400px) {
+    .first-section h2{
+        font-size:60px;
+    }
+    .first-section h3{
+        font-size: 20px;
+    }
+    .first-section h5{
+        font-size: 19px;
+    }
+
+    .first-section p{
+        font-size: 17px;
+    }
+    .first-section-texte{
+        padding: 0px 30px;
+    }
+    .first-section-image img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:1240px) {
+    .first-section-image img{
+        width: 100%;
+        height: auto;
+        
+    }
+    .first-section-image{
+        margin: auto;
+    }
+
+    .first-section{
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+        padding-top: 0.5em;
+        text-align: center;
+    }
+
+    .first-section-texte{
+        padding: 0px 20px;
+        
+    }
+    .first-section-texte h5{
+        text-align: center;
+    }
+}

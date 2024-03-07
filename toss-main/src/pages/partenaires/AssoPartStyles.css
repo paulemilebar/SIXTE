@@ -1,0 +1,133 @@
+.asso-part{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asso-part h1{
+    color: black;
+    font-size: 6em;
+}
+
+.asso-part a{
+    position: absolute;
+    bottom: 5%;
+}
+
+.asso-part-content{
+    min-height: 100vh;
+    display: flex;
+}
+
+.line-container{
+    width: 10%;
+}
+
+.asso-part-content svg{
+    display: flex;
+    margin-left: 5em;
+    
+
+   
+}
+
+.path {
+    stroke-dasharray:2700;
+    stroke-dashoffset:2700px;
+
+  }
+  
+ .asso-part-inner div{
+    height: 45vh;
+display: flex;
+ }
+ .asso-part-inner-titles{
+   height: auto !important;
+ }
+ .asso-part-inner div img{
+    width: 400px;
+    height: 175px;
+ }
+ .asso-part-inner div:last-child img{
+    width: 250px;
+    height: 200px;
+ }
+
+ .asso-part-inner-content{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .asso-part-inner-content h2{
+    font-size: 3em;
+   font-weight: 300;
+ }
+ .asso-part-inner-content p{
+    color: #474646;
+    width: 90%;
+    text-align: justify;
+    margin: 1em 0em;
+ }
+
+ .btn-asso{
+    background-color: black;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 30px;
+    width: 180px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    transition: 0.4s all ease-in-out;
+ }
+
+ .btn-asso:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s all ease-in-out;
+ }
+
+ @media screen and (max-width:1240px) {
+    .asso-part h1{
+        font-size: 4em;
+        text-align: center;
+    }
+
+ }
+
+ @media screen and (max-width:1100px) {
+    .asso-part h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    .asso-part-inner div{
+        height:auto;
+        flex-direction: column;
+        padding: 1em 0;
+  
+    }
+    .asso-part-inner div img{
+        width: 250px;
+        height: 100px;
+        margin: auto;
+     }
+     .asso-part-inner div:last-child img{
+        width: 150px;
+        height: 125px;
+        margin: auto;
+     }
+     .line-container{
+        width: 0;
+     }
+     .asso-part-inner-content{
+        width: 80%;
+        margin: auto;
+     }
+     .asso-part-inner-content p{
+        margin: 1em auto;
+     }
+     .asso-part-content svg{
+        margin-left: 1em;
+     }
+
+ }

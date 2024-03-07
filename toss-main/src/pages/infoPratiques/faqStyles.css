@@ -1,0 +1,133 @@
+:root{
+    --color-text : rgba(23, 15, 73, 1);
+    --color-text-2:rgba(111, 108, 144, 1);
+    --color-main: rgba(74, 58, 255, 1);
+    --color-second:rgba(243, 241, 255, 1);
+    --background-faq:rgba(247, 247, 251, 1);
+    --background-card: #ffffff;
+
+
+}
+
+.faq{
+    min-height: 100vh;
+    padding-bottom: 10em;
+    background-color: var(--background-faq);
+}
+.faq h1{
+    padding-top: 1em;
+    text-align: center;
+    font-size: 6em;
+    color: var(--color-text);
+}
+.faq-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+   
+    flex-direction: column;
+}
+
+.faq-card{
+    display: flex;
+    width:800px;
+    margin: 0 auto;
+    background: var(--background-card);
+    border-radius: 14px;
+    margin: 2em;
+    padding: 1em 0;
+    flex-direction: column;
+    box-shadow: 0px 6px 16px rgba(74, 58, 255, 0.19);
+    transition: 0.5s all ease-in-out;
+
+}
+
+.faq-content {
+    width: 800px;
+ 
+    justify-content: space-between;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+}
+.faq-content h2{
+    color: var(--color-text);
+    font-size: 1.8em;
+    font-weight: 400;
+    width: 80%;
+}
+.faq-inner{
+    transform: scale(0);
+    height: 0;
+    transform-origin: top center;
+    transition: transform 0.5s ease 0s;
+    opacity: 0;
+}
+.faq-inner p{
+    color: var(--color-text-2);
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 30px;
+    width: 800px;
+    padding: 10px 30px;
+    text-align: justify;
+   
+}
+.faq .display{
+    border: 2px solid var(--color-main);
+    padding-bottom: 2em;
+}
+.active-text {
+    transform: scale(1);
+    opacity: 1;
+    height: auto;
+    transition: transform 0.5s var(--transition-cubic);
+    --transition-cubic: cubic-bezier(0.175,0.885,0.32,1.075);
+}
+
+.faq-inner a{
+    background: var(--color-main);
+    color: var(--color-second);
+    padding: 12px 24px;
+    margin: auto;
+    border-radius: 20px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid var(--color-main);
+    transition: 0.5s all ease-in-out;
+
+}
+.faq-inner a:hover{
+    background-color: var(--background-card);
+    color: var(--color-main);
+    transition: 0.5s all ease-in-out;
+}
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:1240px) {
+    .faq-card{
+        width: 300px;
+    }
+    .faq-content{
+        width: 300px;
+    }
+    .faq-content h2{
+        font-size: 1.3em;
+    }
+    .faq-card p{
+        width: 300px;
+    }
+    .FlecheDownFaq{
+        width: 40px;
+    }
+    .FlecheRightFaq{
+        width: 70px;
+    }
+}

@@ -1,0 +1,192 @@
+.acces-tournoi-title{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.acces-tournoi-title h1{
+    font-size: 6em;
+    color: black;
+
+}
+.acces-tournoi-title a{
+    position: absolute;
+    bottom: 5%;
+}
+
+.acces-tournoi-plan h2{
+    margin: 50px 0px;
+    text-align: center;
+    font-size: 3em;
+    color: black;
+}
+.acces-tournoi-plan img{
+    width: 80%;
+    margin: auto;   
+    display: flex;
+}
+.acces-tournoi-row{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.acces-tournoi-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.acces-tournoi-btn button{
+    padding: 12px 24px;
+    background: #cb082e;
+    color: #fefae0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: rgb(149 157 165 / 50%) 0px 8px 24px;
+    transition: 0.4s all ease-in-out;
+}
+.acces-tournoi-btn button:hover{
+    color: white;
+    transition: 0.4s all ease-in-out;
+    border-radius: 5px;
+}
+
+.acces-tournoi-how h2{
+    text-align: center;
+    font-size: 4em;
+    margin-top: 40px;
+    color: #cb082e;
+}
+
+.acces-tournoi-how h6{
+    color:#919090;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.acces-tournoi-box{
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 1em auto;
+}
+.acces-tournoi-box p{
+    color:#919090;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.acces-tournoi-box h4{
+    font-size: 3em;
+    font-weight: 500;
+    color: #474646;
+}
+.acces-tournoi-box h6{
+    color:#919090;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.acces-tournoi-box div{
+border:1px solid;
+border-color: #dadada;
+border-radius: 16px;
+padding: 32px 16px ;
+box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+.acces-tournoi-map h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size:  4em;
+    margin-bottom: 30px;
+    
+}
+.acces-tournoi-map iframe{
+    margin: auto;
+    width: 90%;
+    display: flex;
+}
+
+.acces-tournoi-data{
+    width: 400px;
+    border-top: 1px solid #919090;
+    border-bottom: 1px solid #919090;
+    padding: 2em;
+    margin: auto;
+    text-align: center;
+}
+.acces-tournoi-data h5{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width:1240px) {
+    .acces-tournoi-title h1{
+        font-size: 5em;
+        text-align: center;
+    }
+
+    .acces-tournoi-row{
+        flex-direction: column;
+       
+    }
+    .acces-tournoi-plan h2{
+        margin: 20px 0px;
+    }
+    .acces-tournoi-btn{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+        
+    
+    }
+    .acces-tournoi-btn button{
+        font-size: 1em;
+        padding: 12px 16px;
+        margin: 10px;
+    }
+    .acces-tournoi-row{
+        height: auto;
+    }
+    .acces-tournoi-plan img{
+        width: 100%;
+    }
+
+
+
+    .acces-tournoi-how h2{
+        font-size: 2.5em;
+    }
+    .acces-tournoi-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acces-tournoi-map h2{
+        font-size: 3em;
+    }
+}

@@ -1,0 +1,69 @@
+.second-section{
+    height: 80vh;
+    background: url('../../assets/toss_stade.jpeg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    width: 100%;
+    height: 100%;
+}
+.timer div:first-child{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.timer div:last-child{
+    border: 1px solid white;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin-top: 3em;
+    padding: 3em;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.timer span{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer p{
+    font-size: 1.5em;
+}
+.timer h6{
+    font-size: 4em;
+}
+
+@media screen and (max-width:1240px) {
+    .timer div:first-child{
+        font-size: 2em;
+    }
+    .timer p{
+        font-size: 1em;
+    }
+    .timer h6{
+        font-size: 2em;
+    }
+    .timer div:last-child{
+
+        padding: 1em;
+        margin: 1em;
+    }
+    .second-section{
+        background-attachment: inherit;
+    }
+
+    
+}

@@ -1,0 +1,120 @@
+
+#video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+.hero .content {
+    text-align: center;
+
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero .content h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+.hero .content img{
+    width: 800px;
+}
+
+.hero h3 {
+    font-size: 2.7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    color: #fff;
+}
+
+.hero-btn {
+    margin: 1rem .2rem;
+    padding: 8px 24px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all ease-in-out;
+}
+
+.hero-btn:hover{
+    border: 1px solid rgb(222, 222, 222);
+    transition: 0.5s all ease-in-out;
+
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(4px);
+}
+
+.fleche-home{
+    transform: translateX(10px);
+}
+
+
+
+@media screen and (max-width:640px) {
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.4rem;
+        margin-bottom: 1.6rem;
+    }
+    .content img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1240px) {
+
+
+    .hero .mobile-footage img{
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .content h3{
+        font-size: 2rem;
+    }
+
+    .btn{
+        padding: 5px 15px !important;
+        font-size: 1.1rem !important;
+        width: auto !important;
+    }
+    .hero .content img{
+        width:300px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,293 @@
+.tarif{
+    min-height: 100vh;
+    background: url('../../assets/tarif_fond.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.tarif h1{
+    font-size: 4em;
+    text-align: center;
+    margin: auto;
+color: rgba(35, 29, 79, 1);
+    padding-top: 1.5em;
+}
+
+.tarif h3{
+    color: rgba(132, 129, 153, 1);
+    font-weight: 400;
+}
+.tarif-container-card{
+    min-height: 70vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tarif-content-card{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.tarif-content h3{
+    text-align: center;
+    padding: 1em;
+    font-size: 2.4em;
+}
+.tarif-content-1{
+    display: flex;
+justify-content: space-around;
+    flex-direction: column;
+    min-height: 80%;
+    border-radius: 20px;
+  
+    padding: 1em;
+}
+.tarif-content-1 h4{
+    color: rgba(35, 29, 79, 1);
+    font-size: 1.8em;
+    padding: 0.5em 0em;
+}
+.tarif-content-1 h2{
+    color: rgba(35, 29, 79, 1);
+    font-size: 2em;
+    padding: 0.5em 0em;
+    font-weight: 500;
+
+}
+
+.tarif-content-1 ul li{
+    color: rgba(132, 129, 153, 1);
+    padding: 0.3em;
+    display: flex;
+   
+   align-items: center;
+}
+.tarif-content-1 ul li p{
+    color: rgba(132, 129, 153, 1);
+    padding-left: 10px;
+   
+}
+.tarif-content-1 button{
+    padding: 12px 32px;
+    border-radius: 20px;
+    background-color: rgba(185, 175, 196, 1);
+    color: white;
+    border: 1px solid rgba(0,0,0,0);
+    margin: 2em auto;
+    width: 90%;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    font-weight: 700 !important;
+}
+.tarif-content-1 button:hover{
+    color: rgba(35, 29, 79, 1);
+    transition: 0.4 all ease-in-out;
+}
+
+.choosen-card{
+    background-color: rgba(35, 29, 79, 1) !important;
+    border-radius: 20px;
+    width: 300px;
+    padding: 1em;
+    height: 100%;
+    transform: translateY(-30px);
+    transition: 0.5s all ease-in-out;
+}
+.choosen-card h2{
+    color: white;
+}
+.choosen-card h4{
+    color: white;
+}
+.choosen-card ul li p{
+    color: white;
+}
+.choosen-card .svg2{
+    fill: white;
+}
+.choosen-card .svg1{
+    fill: rgba(255,255,255,0.5);
+}
+.choosen-card button{
+    background-color: rgba(187, 107, 217, 1);
+    font-weight: 500;
+}
+.tarif-options{
+    min-height: 100vh;
+    background: url('../../assets/fond_tarif_2.png');
+    background-position: center;
+    background-size: cover;
+    transform: 180deg;
+    transform: translateY(-10px);
+
+}
+
+.tarif-options-container{
+    min-height: 15vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.tarif-options-card{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 90%;
+    min-height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tarif-options-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(10px);
+}
+.tarif-options-button button{
+    padding: 12px 32px;
+    border-radius: 20px;
+    background-color: rgba(185, 175, 196, 1);
+    color: white;
+    border: 1px solid rgba(0,0,0,0);
+  
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+    font-weight: 700 !important;
+    margin-top: 20px;
+}
+
+.tarif-options-button button:hover{
+    color: rgba(35, 29, 79, 1);
+    transition: 0.4 all ease-in-out;
+}
+.tarif-options-button .svg3{
+    fill: rgb(0, 197, 0);
+}
+.tarif-options-button .svg4{
+    fill: rgba(255, 255, 255, 0.5);
+    fill-opacity: 0.8;
+}
+
+.tarif-options-button svg{
+    transform: translateY(-10px);
+}
+
+.tarif-options .actives{
+    opacity: 1;
+    transition: 0.4s all ease-in-out;
+}
+.tarif-options .desactives{
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+
+}
+
+.tarif-options h2{
+    text-align: center;
+    padding: 1em;
+    color: rgba(35, 29, 79, 1);
+    font-size: 2em;
+}
+
+.tarif-options h5{
+    font-size: 1.2em;
+    padding-bottom: 20px;
+    transform: translateY(-10px);
+    color: rgba(132, 129, 153, 1);
+}
+.cart{
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    bottom: 5%;
+    right:5%;
+    background-color: rgba(255,255,255,0.5);
+    z-index: 1000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.shopping-cart{
+    font-size: 1.5em;
+}
+.cart p{
+    color: rgba(35, 29, 79, 1);
+    font-size: 1.2em;
+}
+.switch-position{
+    position: fixed;
+    top:110px;
+    right: 100px;
+    z-index: 1000;
+}
+.register{
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register a{
+    background-color: rgba(187, 107, 217, 1);
+    color: white;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.4s all ease-in-out;
+
+}
+
+.register a:hover{
+    color:rgba(35, 29, 79, 1);
+}
+@media screen and (max-width:1240px) {
+    .tarif h1{
+        font-size: 3em;
+        width: 95%;
+    }
+    .tarif-content h3{
+        font-size: 2em;
+    }
+    .tarif-content-card{
+        flex-direction: column;
+    }
+    .tarif-content-1{
+        padding: 3em;
+        margin: 1em;
+        background-color: white;
+    }
+    .choosen-card{
+        transform: translateY(-10px);
+    }
+    .tarif-options-card{
+        flex-direction: column;
+        padding-bottom: 2em;
+    }
+    .tarif-options-button{
+        height: 90px;
+    }
+    .tarif-options{
+        padding-bottom: 2em;
+    }
+    .switch-position{
+        position: fixed;
+        bottom: 5%;
+        top: auto;
+        left: 5%;
+        z-index: 1000;
+    }
+}

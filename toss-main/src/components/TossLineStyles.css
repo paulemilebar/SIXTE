@@ -1,0 +1,11 @@
+.toss_line img{
+    width: 50px;
+    margin: auto;
+    animation: rotation 10s infinite linear;
+}
+
+.toss_line{
+    margin: 1rem ;
+    display: flex;
+    text-align: center;
+}
